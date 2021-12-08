@@ -108,7 +108,7 @@ def send_game(query):       # Creating the inline query handler
         InputTextMessageContent("<b>Start the game! 🥳\n\nGame will be expire in 5 minutes!</b>",
         parse_mode = "HTML"),reply_markup = play,
         description = "Play a game of Tic-Tac-Toe with your friends and family! ✌🏻",
-        thumb_url = "https://github.com/TECH-SAVVY-GUY/TELEGRAM-BOTS/blob/master/assets/tic-tac-toe.png?raw=true")
+        thumb_url = "https://github.com/TECH-SAVVY-GUY/telegram-games/blob/master/assets/tic-tac-toe.png?raw=true")
         bot.answer_inline_query(query.id, [t_t_t])
     except:
         pass
