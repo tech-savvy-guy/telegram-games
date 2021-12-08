@@ -37,7 +37,7 @@ def emoji_board(game):              # Creates the board in ASCII format
 
     return tabulate(board, tablefmt="grid")
 
-def check_win(game, game_id):       # Checks the status of the game
+def check_win(game, game_id):       # Checks the status of the game  
 
     wins = [
         (0,1,2), (3,4,5), (6,7,8), (0,4,8),
