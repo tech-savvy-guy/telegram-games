@@ -141,8 +141,8 @@ def send_game(query):                   # Creating the inline query handler
 
     try:
         c_4 = InlineQueryResultPhoto('_c4_',
-        'https://raw.githubusercontent.com/TECH-SAVVY-GUY/telegram-games/master/assets/game_board.jpg',
-        'https://raw.githubusercontent.com/TECH-SAVVY-GUY/telegram-games/master/assets/connect-4.jpg',
+        photo_url='https://raw.githubusercontent.com/TECH-SAVVY-GUY/telegram-games/master/assets/game_board.jpg',
+        thumb_url='https://raw.githubusercontent.com/TECH-SAVVY-GUY/telegram-games/master/assets/connect-4.jpg',
         title = "ᑕᗝᑎᑎᗴᑕ丅 - 4", description="Play a game of Connect-4 with your friends and family! ✌🏻",
         reply_markup = InlineKeyboardMarkup().row(InlineKeyboardButton("Tap to play!",
         callback_data=f"c-play{query.from_user.id}")), caption = "<b>Start the game! 🥳\n\
